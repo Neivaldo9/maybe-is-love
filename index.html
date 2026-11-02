@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Para a Magui 💜</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="app">
+  <div class="bar"><i id="fill"></i></div>
+  <button class="ghost music" id="music" aria-pressed="false" aria-label="Ligar ou desligar a música">♫ ✕</button>
+
+  <section class="screen active">
+    <p class="eyebrow">Para a Magui</p>
+    <h1>A melhor parte</h1>
+    <p class="lead">Estavas num mundo diferente, mas ainda bem que voltaste ao meu. Preparei uma coisinha para ti 💜</p>
+    <button class="btn" id="startMusic" data-next>Começar com música ♫</button>
+    <button class="btn ghost" data-next>Sem música</button>
+  </section>
+
+  <section class="screen">
+    <p class="eyebrow">O alfabeto da Magui</p>
+    <h2>Toca nas letras</h2>
+    <div class="tiles" id="tiles"></div>
+    <p class="note" id="maguiNote" aria-live="polite"></p>
+    <button class="btn" data-next>Continuar ♡</button>
+  </section>
+
+  <section class="screen">
+    <p class="eyebrow">Cantadas</p>
+    <h2>Escolhe uma carta</h2>
+    <div class="cards" id="cards"></div>
+    <button class="btn" data-next>Continuar ♡</button>
+  </section>
+
+  <section class="screen">
+    <p class="eyebrow">Momentos</p>
+    <h2>Coisas que me fazem sorrir</h2>
+    <div class="polas">
+      <figure class="pola"><img src="img/foto1.jpg" alt="" onerror="this.parentNode.classList.add('empty')"><div class="ph">📷 img/foto1.jpg</div><figcaption>Seu olhar 10/10 💜💜💜😍😍</figcaption></figure>
+      <figure class="pola"><img src="img/foto2.jpg" alt="" onerror="this.parentNode.classList.add('empty')"><div class="ph">📷 img/foto2.jpg</div><figcaption>seus lábios 😍😍😍😍</figcaption></figure>
+    </div>
+    <button class="btn" data-next>Continuar ♡</button>
+  </section>
+
+  <section class="screen">
+    <p class="eyebrow">Jogo do Ludo</p>
+    <h2>Lança o dado, Magui</h2>
+    <div class="dice" id="dice">⚀</div>
+    <p class="note" id="diceMsg" aria-live="polite">Preciso de um seis para sair de casa…</p>
+    <button class="btn" id="roll">Lançar o dado 🎲</button>
+    <button class="btn" id="afterDice" data-next hidden>Continuar ♡</button>
+  </section>
+
+  <section class="screen">
+    <p class="eyebrow">Sem cantadas, só a verdade</p>
+    <h2>Uma coisa que quero que saibas</h2>
+    <div class="letter" id="letter">
+      <p>Magui,</p>
+      <p>Acho-te fofa e engraçada, e tens um jeito de ser que é só teu.</p>
+      <p>Consegues ser durona e difícil de decifrar e, ao mesmo tempo, ser doce e fofa. Essa mistura é o que mais me prende</p>
+      <p>Não sei explicar como, mas tu consegues deixar-me pensativo. Há coisas que não têm explicação, só se sentem</p>
+      <p>Fiz isto para te dizer, com leveza e sem pressa, que gosto de te ver sorrir 💜</p>
+    </div>
+    <button class="btn late" id="afterLetter" data-next>Continuar ♡</button>
+  </section>
+
+  <section class="screen">
+    <p class="eyebrow">Uma pergunta</p>
+    <h2>Magui, posso ver-te?</h2>
+    <p class="lead">Sei que estás cá de férias até janeiro. Escolhe como queres que seja, sem pressa</p>
+    <p class="mini">O programa</p>
+    <div class="chips" id="progs"></div>
+    <p class="mini">Quando</p>
+    <div class="chips" id="days"></div>
+    <a class="btn" id="yes" target="_blank" rel="noopener">Combinado, vamos! 💜</a>
+    <a class="btn ghost" id="maybe" target="_blank" rel="noopener">Talvez outro dia 💜</a>
+    <p class="note">Responde só se e quando quiseres. Sem pressa, sem pressão</p>
+  </section>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
